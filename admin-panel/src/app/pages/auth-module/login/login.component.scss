@@ -1,0 +1,77 @@
+/* login.component.css */
+
+.login-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* First div (40% width) */
+  .image-container {
+    width: 45%;
+    overflow: hidden;
+  }
+  
+  .image-container img{
+    width: 100%;
+    height: auto;
+  }
+
+  /* Second div (Login form centered) */
+  .login-form-container  {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 200px;
+    // padding: 20px; // O'zgartirish mumkin
+  }
+
+  .login-form-container h1{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+  }
+
+  .login-form-container label{
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+  }
+  /* Input and button styling */
+  input {
+    width: 60%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  button{
+    width: 63.5%;
+    padding: 10px;
+    margin: 20px 0;
+    font-size: 17px;
+    border-radius: 5px;
+  }
+  
+  .login-form-container a{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .login-form-container a:hover{
+    color:  #56a3da;
+  }
+
+  /* Continue button styling */
+  .continue-button {
+    color: #fff;
+    background-color: #0691F1;
+  }
+  
