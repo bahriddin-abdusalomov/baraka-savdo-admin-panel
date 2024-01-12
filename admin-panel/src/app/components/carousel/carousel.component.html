@@ -1,1 +1,9 @@
-<p>carousel works!</p>
+<div class="container">
+  <div class="carousel">
+    <button class="button-prev" (click)="prev()"><</button>
+    <div *ngFor="let image of visibleImages" class="carousel-item">
+      <img [src]="image" alt="Carousel Image" />
+    </div>
+    <button class="button-next" (click)="next()">></button>
+  </div>
+</div>
