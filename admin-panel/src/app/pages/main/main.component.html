@@ -1,25 +1,5 @@
 <!-- navbar.component.html -->
-<div class="navbar">
-  <div class="navbar-left">
-    <img
-      class="logo"
-      src="../../../assets/images/logo/cart.png"
-      height="16"
-      alt=""
-      loading="lazy"
-      style="margin-top: -1px"
-    />
-    <span class="brand-name">Baraka Savdo</span>
-  </div>
-  <div class="navbar-right">
-    <span class="nav-item"><a href="#afzalliklar">Afzalliklar</a></span>
-    <span class="nav-item">Sharhlar</span>
-    <span class="nav-item">FAQ</span>
-    <span class="nav-item">Sotuvchilar uchun ko'rsatmalar</span>
-    <button class="nav-button">Ro'yxatdan o'tish</button>
-    <button class="nav-button navbar-transparent">Shaxsiy kabinet</button>
-  </div>
-</div>
+<app-navbar></app-navbar>
 
 <!-- image-text-button.component.html -->
 <div class="container">
@@ -116,3 +96,69 @@
     </div>
   </div>
 </div>
+<div class="sharhlar" id="sharhlar">
+  <div class="baraka-savdo-sharh">
+    <p>Baraka Savdo sotuvchilarining fikrlari</p>
+  </div>
+  <div class="baraka-savdo-hamkor">
+    <div class="sharh-1">
+      <h1>Lazizbek Xoshimov</h1>
+      <p>
+        Baraka Savdo tasischilariga rahmat. Xozrgi kunga qadar 300 ga yaqin
+        buyurtma bo'ldi. Menejer Bekzod biz bilan butun jarayon yordamda
+        boldila.
+      </p>
+    </div>
+    <div class="sharh-2">
+      <h1>Jasurbek Ubaydullayev</h1>
+      <p>
+        Baraka Savdo biznes platformasi juda puxta o‘ylangan va qulay tizimdir.
+        Barcha operatsiyalar tezda sodir bo'ladi, tizim tezda javob beradi.
+        Barcha bo'limlar intuitivdir. Fikr-mulohaza juda yaxshi ishlaydi, ular
+        har doim yordam beradi. Men ushbu platforma bilan ishlashdan mamnunman.
+      </p>
+    </div>
+    <div class="sharh-3">
+      <h1>Ibratjon Ibrohimov</h1>
+      <p>
+        Baraka Savdo – brendingizni internetga olib chiqish va masofadan turib
+        sotish uchun ajoyib imkoniyat.\ Mening vazifam noyob mahsulotni topish
+        yoki uni ishlab chiqarish, Baraka Savdo esa mahsulotni mijozga yetkazib
+        berish bilan bog'liq barcha qiyin ishlarni o'z zimmasiga oladi.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="baraka-savdo-sharh">
+  <p>Baraka Savdoda allaqachon sotilgan</p>
+</div>
+<app-carousel></app-carousel>
+<div class="faq" id="faq">
+  <app-faq></app-faq>
+</div>
+
+<div class="baraka-savdo-sharh">
+  <p>Qo'shimcha savollar uchun manzillar</p>
+</div>
+<div class="container-contact">
+  <div class="image-container-contact">
+    <a href="https://t.me/Bahriddin_Abdusalomov" target="_blank ">
+      <img src="../../../assets/images/main-page/telegram.png" alt="Image 1" />
+      <p>Telegram manzil</p>
+    </a>
+  </div>
+  <div class="image-container-contact">
+    <a href="https://www.instagram.com/direct/inbox/" target="_blank">
+      <img src="../../../assets/images/main-page/instagram.png" alt="Image 2" />
+      <p>Instagram manzil</p>
+    </a>
+  </div>
+  <div class="image-container-contact">
+    <a href="https://www.youtube.com/results?search_query=uzum" target="_blank">
+      <img src="../../../assets/images/main-page/youtube.png" alt="Image 2" />
+      <p>You Tube video qo'llanma</p>
+    </a>
+  </div>
+</div>
+<app-footer></app-footer>

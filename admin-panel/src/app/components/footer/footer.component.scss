@@ -1,0 +1,48 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+  }
+  
+  .footer-section {
+    width: 48%;
+  }
+  
+  .logo-and-text {
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo {
+    width: 70px; /* O'zgartiring kerak */
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .text {
+    padding-top: 10px;
+    font-size: 1.9rem; /* Adjust the font size according to your needs */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  a {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+  }
+
+  
