@@ -1,11 +1,8 @@
-/* login.component.css */
-
 .login-container {
     display: flex;
     height: 100vh;
   }
   
-  /* First div (40% width) */
   .image-container {
     width: 45%;
     overflow: hidden;
@@ -16,14 +13,12 @@
     height: auto;
   }
 
-  /* Second div (Login form centered) */
   .login-form-container  {
     width: 55%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-left: 200px;
-    // padding: 20px; // O'zgartirish mumkin
   }
 
   .login-form-container h1{
@@ -40,7 +35,7 @@
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
   }
-  /* Input and button styling */
+
   input {
     width: 60%;
     padding: 10px;
@@ -69,7 +64,6 @@
     color:  #56a3da;
   }
 
-  /* Continue button styling */
   .continue-button {
     color: #fff;
     background-color: #0691F1;
