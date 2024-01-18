@@ -11,16 +11,16 @@
     <form [formGroup]="registrationForm" class="form">
       
           <label for="name">Ismingizni kiriting</label>
-          <input type="text" id="name" formControlName="first_name" placeholder="Ism kiriting" />
+          <input type="text" id="name" formControlName="FirstName" placeholder="Ism kiriting" />
       
           <label for="last_name">Familiyangizni kiriting</label>
-          <input type="text" id="last_name" formControlName="last_name" placeholder="Familiya kiriting" />
+          <input type="text" id="last_name" formControlName="LastName" placeholder="Familiya kiriting" />
       
           <label for="phone">Telefon raqamingizni kiriting</label>
-          <input type="text" id="phone" formControlName="phone_number" placeholder="+998 94 123 45 67" />
+          <input type="text" id="phone" formControlName="PhoneNumber" placeholder="+998 94 123 45 67" />
       
           <label for="password">Parolni kiriting</label>
-          <input type="password" id="password" formControlName="password" placeholder="Parol" />
+          <input type="password" id="password" formControlName="Password" placeholder="Parol" />
       
           <button type="button" class="continue-button" (click)="registerUser()" >Davom etish</button>
 
