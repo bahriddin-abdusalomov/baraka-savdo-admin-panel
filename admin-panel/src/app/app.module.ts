@@ -15,6 +15,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { RegisterComponent } from './pages/auth-module/register/register.component';
 import { LoginComponent } from './pages/auth-module/login/login.component';
 import { ResetPasswordComponent } from './pages/auth-module/reset-password/reset-password.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,7 @@ import { ResetPasswordComponent } from './pages/auth-module/reset-password/reset
     LoginComponent,
     ResetPasswordComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, HttpClientModule, ReactiveFormsModule],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
 })
