@@ -18,20 +18,25 @@ export class RegisterComponent{
 
   ngOnInit(): void {
     this.registrationForm = this.formBuilder.group({
-      first_name: ['', Validators.required],
-      last_name: ['', Validators.required],
-      phone_number: ['', Validators.required],
-      password: ['', Validators.required],
+      FirstName: ['', Validators.required],
+      LastName: ['', Validators.required],
+      PhoneNumber: ['', Validators.required],
+      Password: ['', Validators.required],
     });
-  }
-
+  }   
   registerUser(): void {
     if (this.registrationForm.valid) {
-      // O'z logikangizni yozishingiz mumkin
-       alert('Foydalanuvchi ro\'yxatdan o\'tdi:' + this.registrationForm.getRawValue());
-       console.log(this.registrationForm.getRawValue())
-    } else {
-      // Validatsiyadan o'tmagan maydonlar bor
+            this.service.register(this.registrationForm.getRawValue())
+            .subscribe({
+              next: () => {
+                alert("Ro'yxatdan o'tdingiz !")
+              },
+              error: () => {
+                alert("Solto oshipka!")
+              }
+            })
+          }
+      else {
        alert('Forma noto\'g\'ri to\'ldirilgan' + this.registrationForm.getRawValue());
     }
   }
