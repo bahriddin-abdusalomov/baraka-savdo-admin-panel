@@ -6,14 +6,16 @@
   <div class="login-form-container">
     <h1>Baraka Savdoga xush kelibsiz!</h1>
 
+    <form [formGroup]="loginForm" class="form">
+
     <label for="phone">Telefon raqamingizni kiriting</label>
-    <input type="text" id="phone" placeholder="+998 94 123 45 67" />
+    <input type="text" id="phone" formControlName="PhoneNumber" placeholder="+998 94 123 45 67" />
 
     <label for="password">Parolni kiriting</label>
-    <input type="password" id="password" placeholder="Parol" />
+    <input type="password" id="password" formControlName="Password" placeholder="Parol" />
 
-    <button type="button" class="continue-button">Davom etish</button>
-
+    <button type="button" class="continue-button" (click)="loginUser()">Davom etish</button>
+    </form>
     <p><a routerLink="/reset">Parolni unutdingizmi?</a></p>
   </div>
 </div>
