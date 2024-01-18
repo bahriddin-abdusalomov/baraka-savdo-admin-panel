@@ -29,6 +29,7 @@ export class RegisterComponent{
     if (this.registrationForm.valid) {
       // O'z logikangizni yozishingiz mumkin
        alert('Foydalanuvchi ro\'yxatdan o\'tdi:' + this.registrationForm.getRawValue());
+       console.log(this.registrationForm.getRawValue())
     } else {
       // Validatsiyadan o'tmagan maydonlar bor
        alert('Forma noto\'g\'ri to\'ldirilgan' + this.registrationForm.getRawValue());
