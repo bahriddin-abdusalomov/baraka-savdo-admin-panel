@@ -1,0 +1,66 @@
+table {
+    width: 100%;
+  }
+  
+  .mat-mdc-form-field {
+    font-size: 14px;
+    width: 77%;
+    margin-top: 100px;
+    margin-left: 300px;
+  }
+  
+  .mat-elevation-z8{
+    width: 77%;
+    margin-left: 300px;
+  }
+
+  .mat-elevation-z8 img{
+    width: 30px;
+    height: 30px;
+  }
+  td, th {
+    width: 25%;
+  }
+// /* product.component.scss */
+// .product-container {
+//     width: 70%;
+//     margin: auto;
+//     margin-left: 400px;
+//     margin-top: 100px;
+//   }
+  
+//   .product-list {
+//     margin-top: 20px;
+  
+//     table {
+//       width: 100%;
+//       border-collapse: collapse;
+  
+//       th, td {
+//         border: 1px solid #ddd;
+//         padding: 8px;
+//         text-align: left;
+//       }
+  
+//       th {
+//         background-color: #f2f2f2;
+//       }
+  
+//       button {
+//         cursor: pointer;
+//         margin-right: 5px;
+//       }
+//     }
+  
+//     .pagination {
+//       margin-top: 10px;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+  
+//       ngx-pagination {
+//         margin: 0;
+//       }
+//     }
+//   }
+  

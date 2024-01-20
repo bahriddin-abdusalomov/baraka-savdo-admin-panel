@@ -1,0 +1,98 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Yuqorida joylashgan boshqa elementlardan o'ngroq bo'lishi uchun */
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(51, 51, 51, 0.9); /* Background rangi: #333 (51, 51, 51), o'qimi: 0.5 */
+    color: #fff;
+    transition: background-color 0.3s ease; /* Animatsiya uchun */
+    margin-left: 250px;
+  }
+  
+  .brand-name {
+    font-size: 1.2rem; /* Adjust the font size according to your needs */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-right: 250px;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-item1 {
+    margin-right: 40px; /* O'lchamni o'zgartiring (misol uchun 25px) */
+    margin-left: 550px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .nav-item {
+    margin-right: 40px; /* O'lchamni o'zgartiring (misol uchun 25px) */
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .nav-button {
+    margin-right: 15px;
+    padding: 12px 35px;
+    background-color: #0691F1;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem; /* Adjust the font size according to your needs */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+  }
+
+  .nav-button:hover {
+    padding: 12px 35px;
+    background-color: #0691F1;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+
+  .navbar-transparent {
+    background-color: rgba(51, 51, 51, 0);
+  }
+  
+  /* Media query for responsive design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-left {
+      margin-bottom: 10px;
+    }
+  
+    .navbar-right {
+      margin-top: 10px;
+    }
+  }
+  
+  :host ::ng-deep {
+    .p-progressbar {
+        height: .5rem;
+        background-color: #D8DADC;
+    
+        .p-progressbar-value {
+            background-color: #607D8B;
+        }
+    }
+}

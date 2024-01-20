@@ -1,0 +1,55 @@
+/* vertikal-navbar.component.css */
+
+.vertical-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    // background-color: #333;
+    background-color: rgba(51, 51, 51, 0.9);
+    color: #fff;
+    width: 250px;
+    height: 100vh;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .nav-item h1{
+    padding-top: 20px;
+    font-size: 1.3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+
+  .fa-building {
+    margin-right: 10px;
+    width: 60px !important;
+    height: 60px !important;
+  }
+  
+  .nav-item img{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+  }
+
+  .list{
+    width: 28px !important;
+    height: 30px !important;
+    margin-left: 20px;
+  }
+
+  .nav-item span {
+    margin-left: 10px;
+    font-size: 14px;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+  }
