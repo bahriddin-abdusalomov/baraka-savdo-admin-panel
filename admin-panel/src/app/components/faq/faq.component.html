@@ -1,10 +1,10 @@
 <div class="faq">
-    <div class="title">
-        <h1>Savollar uchun javoblar</h1>
-    </div>
+  <div class="title">
+    <h1>Savollar uchun javoblar</h1>
+  </div>
   <div class="faq-item" *ngFor="let faq of faqs">
     <div class="question">{{ faq.question }}</div>
     <div class="answer" *ngIf="faq.showAnswer">{{ faq.answer }}</div>
-    <button (click)="toggleAnswer(faq)">ko'rish/yopish </button>
+    <button (click)="toggleAnswer(faq)">ko'rish/yopish</button>
   </div>
 </div>
