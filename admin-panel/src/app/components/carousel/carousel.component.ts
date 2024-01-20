@@ -16,7 +16,7 @@ export class CarouselComponent implements OnInit {
     '../../../assets/images/carousel/tild3763-3862-4736-b837-623434323737__philips_logo.svg',
     '../../../assets/images/carousel/tild3535-6430-4033-b639-356437343739__bosch-logo.svg',
     '../../../assets/images/carousel/tild3464-3964-4330-a230-303331616563__lenovo_logo_2015.svg',
-  ]; 
+  ];
 
   visibleImages: string[] = [];
   currentIndex = 0;
@@ -29,7 +29,7 @@ export class CarouselComponent implements OnInit {
   }
 
   next(): void {
-    if(this.itemsPerPage == 9){
+    if (this.itemsPerPage == 9) {
       this.currentIndex = 3;
     }
     this.currentIndex += this.itemsPerPage;
@@ -37,7 +37,7 @@ export class CarouselComponent implements OnInit {
   }
 
   prev(): void {
-    if(this.itemsPerPage == 0){
+    if (this.itemsPerPage == 0) {
       this.currentIndex = 6;
     }
     this.currentIndex -= this.itemsPerPage;
