@@ -18,6 +18,22 @@ table {
     width: 30px;
     height: 30px;
   }
+
+  .mat-elevation-z8 button{
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(91, 146, 205);
+  }
+
+  .mat-elevation-z8 button:hover{
+    background-color: rgb(11, 122, 240);
+  }
+
+  .mat-elevation-z8 button:active{
+    background-color: rgb(49, 155, 243);
+  }
   td, th {
     width: 25%;
   }
