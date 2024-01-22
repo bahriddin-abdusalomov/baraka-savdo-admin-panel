@@ -34,6 +34,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatInputModule } from '@angular/material/input';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { ImageUrlPipe } from './pipes/image-url.pipe';
 
 @NgModule({
   declarations: [
@@ -54,6 +56,7 @@ import { MatSortModule } from '@angular/material/sort';
     ProductComponent,
     ProductAllNavComponent,
     DialogComponent,
+    ImageUrlPipe,
   ],
   imports: [
     NgxPaginationModule,
@@ -72,8 +75,11 @@ import { MatSortModule } from '@angular/material/sort';
     MatTableModule,
     MatSortModule,
     MatPaginatorModule,
+    MatDatepickerModule,
   ],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+  
+}
