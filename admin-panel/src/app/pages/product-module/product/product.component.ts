@@ -14,7 +14,6 @@ export interface Product {
   unitPrice: number;
 }
 
-
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
@@ -23,9 +22,9 @@ export interface Product {
 export class ProductComponent {
   displayedColumns: string[] = [
     'id',
+    'image',
     'name',
     'description',
-    'image',
     'unitPrice',
     'yangilash',
     'ochirish',
@@ -37,14 +36,16 @@ export class ProductComponent {
   @ViewChild(MatSort) sort: MatSort;
 
   constructor(private service: ProductService) {
-    this.getAllProducts()
+    this.getAllProducts();
+  }
+  
+  ngOnInit(){
+    this.ngAfterViewInit()
   }
 
-
-
   ngAfterViewInit() {
-    // this.dataSource.paginator = this.paginator;
-    // this.dataSource.sort = this.sort;
+    this.dataSource.paginator = this.paginator;
+    this.dataSource.sort = this.sort;
   }
 
   applyFilter(event: Event) {
@@ -57,11 +58,9 @@ export class ProductComponent {
   }
 
   getAllProducts() {
-    this.service.getAllProduct()
-      .subscribe(
-        (respone) => {
-          this.dataSource = new MatTableDataSource(respone);
-        });
+    this.service.getAllProduct().subscribe((respone) => {
+      this.dataSource = new MatTableDataSource(respone);
+    });
   }
 
   deleteProduct(row: any) {
@@ -80,4 +79,12 @@ export class ProductComponent {
       },
     });
   }
+
+  getImageUrl(imagePath: string): string {
+    // Rasmlarni backendda qanday saqlaganingizni (serverda qayerda saqlanganligini) bilmaslik uchun
+    // ajoyiblik uchun, rasmlarni direktoriya nomini xabar qilish orqali ishlatamiz
+    // Odatda, rasmlar serverda "public" yoki "assets" katalogida saqlanadi
+    return `https://localhost:7030/${imagePath.replace(/\\/g, '/')}`;
+  }
+
 }
