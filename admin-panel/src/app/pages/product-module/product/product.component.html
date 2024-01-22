@@ -29,7 +29,7 @@
     <ng-container matColumnDef="image">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Rasm</th>
       <td mat-cell *matCellDef="let row">
-        <img src="{{ row.image }}"  alt="salto">
+        <img [src]="row.image | imageUrl " alt="salto">
     </td>
     </ng-container>
 
@@ -49,7 +49,7 @@
     <ng-container matColumnDef="ochirish">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>O'chirish</th>
       <td mat-cell *matCellDef="let row">
-        <button>delete</button>
+        <button (click)="deleteProduct(row)" >delete</button>
       </td>
     </ng-container>
 
