@@ -25,11 +25,11 @@ export class LoginComponent {
       let data = this.service.login(this.loginForm.getRawValue()).subscribe({
         next: () => {
           alert('Kirish paroli togri!!!');
-        },
-        error: () => {
-          alert('Kalla qoyding uka !');
-          console.log(data);
-        },
+        }
+        // error: () => {
+        //   alert('Kalla qoyding uka !');
+        //   console.log(data);
+        // },
       });
     } else {
       alert('Parol notogri kiritildi!!');
