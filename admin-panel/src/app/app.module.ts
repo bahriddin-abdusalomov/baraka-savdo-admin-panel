@@ -36,6 +36,14 @@ import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { ImageUrlPipe } from './pipes/image-url.pipe';
+import { ConfirmationCodeComponent } from './pages/auth-module/confirmation-code/confirmation-code.component';
+import { EmailVerificationComponent } from './pages/auth-module/email-verification/email-verification.component';
+// import { RouterModule, Routes } from '@angular/router';
+
+// const routes: Routes = [
+//   // Boshqa sahifalar uchun konfiguratsiya
+//   { path: 'boshqa-sahifa', component: ProductComponent },
+// ];
 
 @NgModule({
   declarations: [
@@ -57,6 +65,8 @@ import { ImageUrlPipe } from './pipes/image-url.pipe';
     ProductAllNavComponent,
     DialogComponent,
     ImageUrlPipe,
+    ConfirmationCodeComponent,
+    EmailVerificationComponent,
   ],
   imports: [
     NgxPaginationModule,
@@ -76,6 +86,7 @@ import { ImageUrlPipe } from './pipes/image-url.pipe';
     MatSortModule,
     MatPaginatorModule,
     MatDatepickerModule,
+    // RouterModule.forRoot(routes),
   ],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
