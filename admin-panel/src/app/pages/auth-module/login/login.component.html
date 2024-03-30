@@ -5,13 +5,14 @@
 
   <div class="login-form-container">
     <h1>Baraka Savdoga xush kelibsiz!</h1>
+    <h1>{{ token }}</h1>
 
     <form [formGroup]="loginForm" class="form">
-      <label for="phone">Telefon raqamingizni kiriting</label>
+      <label for="email">Emailingizni kiriting</label>
       <input
         type="text"
-        id="phone"
-        formControlName="PhoneNumber"
+        id="email"
+        formControlName="Email"
         placeholder="+998 94 123 45 67"
       />
 
@@ -27,6 +28,6 @@
         Davom etish
       </button>
     </form>
-    <p><a routerLink="/reset">Parolni unutdingizmi?</a></p>
+    <p><a routerLink="/verification">Parolni unutdingizmi?</a></p>
   </div>
 </div>
