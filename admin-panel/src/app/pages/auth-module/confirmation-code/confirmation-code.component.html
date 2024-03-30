@@ -1,0 +1,34 @@
+<!-- reset-password.component.html -->
+
+<div class="reset-password-container">
+  <!-- First inner div -->
+  <div class="logo-text-container">
+    <img src="../../../../assets/images/logo/cart_2.png" alt="Logo" />
+    <p>BARAKA SAVDO</p>
+  </div>
+
+  <!-- Second inner div with blurred background -->
+  <div class="blur-background">
+    <!-- Reset password form -->
+    <h1>Tasdiqlash kodi</h1>
+    <form [formGroup]="confirmationForm" class="form">
+      <label for="email">Emailingizga 6 xonali tasdiqlash kodini</label>
+      <br />
+      <label for="email">yubordik.</label>
+      <input
+        type="text"
+        id="number"
+        formControlName="number"
+        placeholder="000000"
+      />
+      <button
+        type="button"
+        class="continue-button"
+        (click)="confirmationCode()"
+      >
+        Tasdiqlash
+      </button>
+    </form>
+    <p><a href="#">Orqaga</a></p>
+  </div>
+</div>
