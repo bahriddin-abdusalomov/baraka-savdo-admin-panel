@@ -32,8 +32,9 @@ export class LoginComponent {
         next: (responce) => {
           this.token = responce?.token;
           console.log(this.token);
+          window.localStorage.setItem('token', this.token);
           alert('Kirish paroli togri!!!');
-          this.router.navigate(['seller/product/all']);
+          this.router.navigateByUrl('/seller/product/all');
         },
         error: (er) => {
           alert('Serverda hatolik mavjud!!');

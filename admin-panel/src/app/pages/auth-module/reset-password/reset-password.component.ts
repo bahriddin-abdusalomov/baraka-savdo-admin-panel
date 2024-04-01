@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthService } from '../../../services/auth/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-reset-password',
@@ -10,12 +11,16 @@ import { AuthService } from '../../../services/auth/auth.service';
 export class ResetPasswordComponent {
   resetPasswordForm: FormGroup;
 
-  constructor(private formBuilder: FormBuilder, private service: AuthService) {}
+  constructor(
+    private formBuilder: FormBuilder,
+    private service: AuthService,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
     this.resetPasswordForm = this.formBuilder.group({
-      PhoneNumber: ['', Validators.required],
-      Password: ['', Validators.required],
+      NewPassword: ['', Validators.required],
+      ConfirmPassword: ['', Validators.required],
     });
   }
   resetPasswordUser(): void {
@@ -25,6 +30,7 @@ export class ResetPasswordComponent {
         .subscribe({
           next: () => {
             alert('Parol yangilandi');
+            this.router.navigateByUrl('/seller/product/all');
           },
           error: () => {
             alert('Ishimiz oxshamayapri');

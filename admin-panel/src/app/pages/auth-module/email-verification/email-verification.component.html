@@ -1,33 +1,32 @@
 <div class="reset-password-container">
-    <!-- First inner div -->
-    <div class="logo-text-container">
-      <img src="../../../../assets/images/logo/cart_2.png" alt="Logo" />
-      <p>BARAKA SAVDO</p>
-    </div>
-  
-    <!-- Second inner div with blurred background -->
-    <div class="blur-background">
-      <!-- Reset password form -->
-      <h1>Parolni qayta tiklash</h1>
-      <form [formGroup]="emailVerificationForm" class="form">
-        <label for="email">Emailingizni kiriting parolni tiklash uchun</label>
-        <br>
-        <label for="email">sizga tasdiqlash kodini yuboramiz</label>
-        <input
-          type="text"
-          id="email"
-          formControlName="Email"
-          placeholder="example@gmail.com"
-        />
-        <button
-          type="button"
-          class="continue-button"
-          (click)="resetPasswordUser()"
-        >
-          Tasdiqlash
-        </button>
-      </form>
-      <p><a href="#">Orqaga</a></p>
-    </div>
+  <!-- First inner div -->
+  <div class="logo-text-container">
+    <img src="../../../../assets/images/logo/cart_2.png" alt="Logo" />
+    <p>BARAKA SAVDO</p>
   </div>
-  
+
+  <!-- Second inner div with blurred background -->
+  <div class="blur-background">
+    <!-- Reset password form -->
+    <h1>Parolni qayta tiklash</h1>
+    <form [formGroup]="emailVerificationForm" class="form">
+      <label for="email">Emailingizni kiriting parolni tiklash uchun</label>
+      <br />
+      <label for="email">sizga tasdiqlash kodini yuboramiz</label>
+      <input
+        type="text"
+        id="email"
+        formControlName="Email"
+        placeholder="example@gmail.com"
+      />
+      <button
+        type="button"
+        class="continue-button"
+        (click)="emailVerification()"
+      >
+        Tasdiqlash
+      </button>
+    </form>
+    <p><a href="#">Orqaga</a></p>
+  </div>
+</div>
