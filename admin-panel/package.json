@@ -24,6 +24,7 @@
     "@angular/router": "^17.0.0",
     "@angular/ssr": "^17.0.9",
     "express": "^4.18.2",
+    "ngx-cookie-service": "^17.1.0",
     "ngx-pagination": "^6.0.3",
     "primeng": "^17.3.3",
     "rxjs": "~7.8.0",

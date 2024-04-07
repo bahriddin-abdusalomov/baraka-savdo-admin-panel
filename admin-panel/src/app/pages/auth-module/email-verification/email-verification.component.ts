@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthService } from '../../../services/auth/auth.service';
+import { CookieService } from 'ngx-cookie-service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -10,11 +11,13 @@ import { Router } from '@angular/router';
 })
 export class EmailVerificationComponent {
   emailVerificationForm: FormGroup;
+  id: string;
 
   constructor(
     private formBuilder: FormBuilder,
     private service: AuthService,
-    private router: Router
+    private router: Router,
+    private cookieService: CookieService
   ) {}
 
   ngOnInit(): void {
@@ -27,8 +30,10 @@ export class EmailVerificationComponent {
       this.service
         .sendVerificationCode(this.emailVerificationForm.getRawValue())
         .subscribe({
-          next: () => {
-            alert('Ishimiz muvaffaqiyatli amalga oshirildi'); 
+          next: (response) => {
+            this.id = response?.id;
+            this.cookieService.set('userId', this.id)
+            alert('Ishimiz muvaffaqiyatli amalga oshirildi');
             this.router.navigateByUrl('/confirmation');
           },
           error: () => {
